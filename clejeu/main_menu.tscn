@@ -1,0 +1,62 @@
+[gd_scene format=3 uid="uid://dy056mgcgs1xw"]
+
+[ext_resource type="Script" uid="uid://dsj42e4n8vvls" path="res://circular_button_effect.gd" id="1_06t4h"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_rhts7"]
+bg_color = Color(0.99583405, 0.9546655, 0.9999998, 1)
+corner_radius_top_left = 100
+corner_radius_top_right = 100
+corner_radius_bottom_right = 100
+corner_radius_bottom_left = 100
+shadow_color = Color(0, 0, 0, 0.3137255)
+shadow_size = 5
+shadow_offset = Vector2(0, 4)
+
+[sub_resource type="RichTextEffect" id="RichTextEffect_7vrkn"]
+script = ExtResource("1_06t4h")
+metadata/_custom_type_script = "uid://dsj42e4n8vvls"
+
+[node name="MainMenu" type="Control" unique_id=1213788172]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Button" type="Button" parent="." unique_id=122207133]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -100.0
+offset_top = -100.0
+offset_right = 100.0
+offset_bottom = 100.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0.8745098, 0.14901961, 0.8745098, 1)
+theme_override_font_sizes/font_size = 20
+theme_override_styles/normal = SubResource("StyleBoxFlat_rhts7")
+text = "PLAY"
+
+[node name="RichTextLabel" type="RichTextLabel" parent="." unique_id=597281228]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -100.0
+offset_top = -100.0
+offset_right = 100.0
+offset_bottom = 100.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+theme_override_colors/default_color = Color(0.5176471, 0.44705883, 1, 0.8666667)
+bbcode_enabled = true
+text = "[b][wave][rainbow][disk]PLAY ME[/disk][/rainbow][/wave][/b]"
+custom_effects = [SubResource("RichTextEffect_7vrkn")]
